@@ -46,9 +46,49 @@ Please don't use this key for any other purpose. And don't share it with anyone 
 sk-xxx
 ```
 
-### Cal.com API Reference
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.10+
+- A [cal.com](https://cal.com) account with an API key
+- An OpenAI API key
+
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Create a `.env` file in the project root with the following variables:
+
+```
+CAL_API_KEY=your_cal_com_api_key
+OPENAI_API_KEY=your_openai_api_key
+CAL_HOST_TIMEZONE=America/New_York
+```
+
+### Running the App
+
+```bash
+streamlit run app.py
+```
+
+Then open the URL shown in the terminal (usually `http://localhost:8501`) in the browser.
+
+### Logs
+
+All requests and errors are written to `app.log` in the project directory.
+
+---
+
+<!-- ### Cal.com API Reference
 
 First, you'll need to create a cal.com account and obtain an API key. Follow the instructions in the 
 [authentication document](https://cal.com/docs/enterprise-features/api/authentication) to get started.
 
-Second, here is the documentation for the cal.com [booking API](https://cal.com/docs/api-reference/v2/bookings/get-all-bookings) and [slot api](https://cal.com/docs/api-reference/v2/slots/find-out-when-is-an-event-type-ready-to-be-booked).
+Second, here is the documentation for the cal.com [booking API](https://cal.com/docs/api-reference/v2/bookings/get-all-bookings) and [slot api](https://cal.com/docs/api-reference/v2/slots/find-out-when-is-an-event-type-ready-to-be-booked). -->
